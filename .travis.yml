@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - "8"
+  - "10"
 
 cache:
   directories:
@@ -8,11 +8,11 @@ cache:
 
 branches:
   only:
-  - master
+  - gh-pages
 
 install:
-  - yarn install
-  - yarn generate
+  - npm install
+  - npm run generate
 
 script:
   - echo "Skipping tests"
@@ -21,7 +21,7 @@ deploy:
   provider: pages
   skip-cleanup: true
   github-token: fae576e550f0024690a72d23c0d13c8a14260412
-  target-branch: gh-pages
+  target-branch: master
   local-dir: dist
   on:
-    branch: master
+    branch: gh-pages
