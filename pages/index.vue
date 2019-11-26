@@ -6,7 +6,7 @@
         h3e.github.io
       </h1>
       <h2 class="subtitle">
-        My beautiful Nuxt.js project
+        My Nuxt.js project
       </h2>
       <div class="links">
         <a
